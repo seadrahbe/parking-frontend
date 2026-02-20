@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking Spots</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/parking.js"></script>
+</head>
+<body>
+    <main class="page">
+        <header class="page-header">
+            <div class="page-header-text">
+                <h1 class="page-title">Parking Spots</h1>
+            </div>
+
+            <div class="page-actions">
+                <button id="load-button" class="button" type="button">Load</button>
+            </div>
+        </header>
+
+        <section class="panel">
+            <div id="records">
+                
+            </div>
+
+            <div id="error-box" class="error-box" hidden></div>
+        </section>
+
+        <section class="panel">
+            <form id="parking-form" class="form">
+                <div class="form-row">
+                    <label class="form-label" for="lot-input">Lot</label>
+                    <input id="lot-input" class="form-input" type="text" value="" required />
+                </div>
+            
+                <div class="form-row">
+                    <label class="form-label" for="spot-input">Spot Number</label>
+                    <input id="spot-input" class="form-input" type="text" value="" required />
+                </div>
+            
+                <div class="form-row">
+                    <label class="form-label" for="status-input">Status</label>
+                    <select id="status-input" class="form-input">
+                        <option value="available">available</option>
+                        <option value="taken" selected>taken</option>
+                    </select>
+                </div>
+            
+                <div class="form-row">
+                    <label class="form-label" for="note-input">Note</label>
+                    <input id="note-input" class="form-input" type="text" value="" />
+                </div>
+            
+                <div class="form-actions">
+                    <button type="submit" class="button">Save Spot</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
